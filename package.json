@@ -1,0 +1,63 @@
+{
+  "name": "form-article",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build:web-component": "vue-cli-service build --target wc --inline-vue --name form-articles src/App.vue",
+    "build:web-library": "vue-cli-service build --target lib --formats umd-min  --name 'FormArticle' src/App.vue"
+  },
+  "dependencies": {
+    "@bachdgvn/vue-otp-input": "^1.0.8",
+    "@braid/vue-formulate": "^2.5.3",
+    "@vue-hero-icons/solid": "^1.7.2",
+    "@vue/composition-api": "^1.4.9",
+    "axios": "^0.24.0",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "moment": "^2.29.1",
+    "pinia": "^2.0.14",
+    "vue": "^2.6.14",
+    "vue-js-toggle-button": "^1.3.3",
+    "vue-loading-overlay": "^3.4.2",
+    "vue-phone-number-input": "^1.1.12",
+    "vue-recaptcha": "^2.0.1",
+    "vue-recaptcha-v3": "^1.9.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "cache-loader": "^4.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^6.0.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass-loader": "^10.2.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.46.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
